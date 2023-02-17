@@ -13,6 +13,7 @@
             duration-500 
             ease-linear"
             :class="{'w-full': expanded}"
+            @click="handleClick"
       >
             <slot/>
       </button>
@@ -25,6 +26,11 @@
                   expanded: {
                         type: Boolean,
                         default: false
+                  }
+            },
+            methods: {
+                  handleClick(){
+                        this.$emit('click')
                   }
             }
       }
