@@ -1,0 +1,26 @@
+name: Publish to NPM
+
+on: 
+  push:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install dependencies and run tests
+      run: |
+        npm install && npm test
+
+    - name: Publish to NPM registry
+      if: success() # only publish when tests pass. 
+      run: | 
+        npm version patch && npm publish --access public && git push --follow-tags origin main
+
+    - name: Add tag and version 
+      run: | 
+        git tag v1.0.0 && git push origin --tags
+
+        
