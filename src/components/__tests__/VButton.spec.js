@@ -7,7 +7,7 @@ describe('Button', () => {
       it('renders a vue instance', () => {
             expect(wrapper.html()).toMatchSnapshot()
       })
-      
+
       it('renders a button', () => {
             expect(wrapper.find('button').exists()).toBe(true)
       })
@@ -17,14 +17,13 @@ describe('Button', () => {
             expect(wrapper.emitted().click).toBeTruthy()
       })
 
-      // it('calls a function when clicked', () => {
-      //       const handleClick = jest.fn()
-      //       const wrapper = mount(Button, {
-      //             propsData: {
-      //                   onClick: handleClick
-      //             }
-      //       })
-      //       wrapper.find('button').trigger('click')
-      //       expect(handleClick).toHaveBeenCalled()
-      // })
+      it('checks the prop to be passed', () => {
+            const wrapper = mount(Button, {
+                  propsData: {
+                        expanded: true
+                  }
+            })
+            expect(wrapper.classes()).toContain('w-full');
+      })
+
 })
