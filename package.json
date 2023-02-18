@@ -1,10 +1,13 @@
 {
       "name": "awesome-vue-ui",
-      "version": "0.0.4",
+      "version": "0.1.4",
       "main": "./dist/vue-ui.umd.js",
       "module": "./dist/vue-ui.es.js",
       "author": "Hassan Pudineh",
       "description": "Awesome UI components for Vue.js 3",
+      "publishConfig": {
+            "registry": "https://registry.npmjs.org/"
+      },
       "repository": "https://github.com/hassanpdn/awesome-vue-ui.git",
       "files": [
             "dist"
