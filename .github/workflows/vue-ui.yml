@@ -23,6 +23,13 @@ jobs:
         git config --global user.email "hassanpudineh67@gmail.com"
         git config --global user.name "hassanpdn"
 
+    - name: Login to NPM with username and password
+      env: 
+        USERNAME: 'hassan_pudineh'  # Replace with your npm username
+        PASSWORD: 'Hp5560201758'  # Replace with your npm password
+      run: | 
+        npm login --registry=https://registry.npmjs.org/ --scope=@myorg --auth-type=basic --always-auth=true --username=$USERNAME --password=$PASSWORD
+
     - name: Publish to NPM registry
       if: success() # only publish when tests pass. 
       run: | 
