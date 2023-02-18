@@ -18,6 +18,11 @@ jobs:
       run: |
         yarn install && npm test
 
+    - name: Configure Git user
+      run: |
+        git config --global user.email "hassanpudineh67@gmail.com"
+        git config --global user.name "hassanpdn"
+
     - name: Publish to NPM registry
       if: success() # only publish when tests pass. 
       run: | 
