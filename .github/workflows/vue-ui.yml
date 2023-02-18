@@ -16,7 +16,7 @@ jobs:
 
     - name: Install dependencies and run tests
       run: |
-        npm install && npm test
+        yarn install && npm test
 
     - name: Publish to NPM registry
       if: success() # only publish when tests pass. 
