@@ -24,6 +24,10 @@ jobs:
               git add package.json
               git commit -m "Updated package.json version"
               git push
+        - name: Update local version
+          run: |
+            git pull origin main
+            npm install --no-package-lock
         - name: publish
           run: npm publish --access public
           env:
