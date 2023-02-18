@@ -1,6 +1,6 @@
 {
       "name": "awesome-vue-ui",
-      "version": "0.1.6",
+      "version": "0.1.7",
       "main": "./dist/vue-ui.umd.js",
       "module": "./dist/vue-ui.es.js",
       "author": "Hassan Pudineh",
