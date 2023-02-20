@@ -11,7 +11,7 @@
       "repository": "https://github.com/hassanpdn/awesome-vue-ui.git",
       "files": [
             "dist"
-      ],
+      ], 
       "exports": {
             ".": {
                   "import": "./dist/vue-ui.es.js",
