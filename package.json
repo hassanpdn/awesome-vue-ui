@@ -21,7 +21,7 @@
       },
       "scripts": {
             "dev": "vite",
-            "build": "vite build && npm run test && npm run coverage && npm publish",
+            "build": "vite build && npm run test && npm run coverage",
             "preview": "vite preview",
             "test": "vitest --environment jsdom",
             "coverage": "vitest run --coverage"
