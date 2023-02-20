@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/hassanpdn/awesome-vue-ui/compare/v1.0.0...v1.1.0) (2023-02-20)
+
+
+### Bug Fixes
+
+* **package.json:** update package.json ([0666774](https://github.com/hassanpdn/awesome-vue-ui/commit/066677401393b635b2e8e68c54f9d61fac19e320))
+
+
+### Features
+
+* **VAlert:** add alert component. ([5ed430a](https://github.com/hassanpdn/awesome-vue-ui/commit/5ed430a65a59d8ca7b6d4f0712170a97b9ccefa1))
+
 # 1.0.0 (2023-02-20)
 
 
