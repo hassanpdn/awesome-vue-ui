@@ -12,6 +12,7 @@
       "files": [
             "dist"
       ],
+      "release": { "branches": [ "main" ] },
       "exports": {
             ".": {
                   "import": "./dist/vue-ui.es.js",
