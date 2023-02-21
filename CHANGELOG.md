@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/hassanpdn/awesome-vue-ui/compare/v1.1.2...v1.2.0) (2023-02-21)
+
+
+### Features
+
+* add alert warning style ([70dfe23](https://github.com/hassanpdn/awesome-vue-ui/commit/70dfe231c8ef39b23cff2ffc29a6934f52347d88))
+
 ## [1.1.2](https://github.com/hassanpdn/awesome-vue-ui/compare/v1.1.1...v1.1.2) (2023-02-21)
 
 
