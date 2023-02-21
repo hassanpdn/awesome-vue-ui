@@ -1,3 +1,10 @@
+## [1.2.5](https://github.com/hassanpdn/awesome-vue-ui/compare/v1.2.4...v1.2.5) (2023-02-21)
+
+
+### Bug Fixes
+
+* update element selector in alert ([6a4f754](https://github.com/hassanpdn/awesome-vue-ui/commit/6a4f7543bed4ff9da4a475e57982a7e1117769ad))
+
 ## [1.2.4](https://github.com/hassanpdn/awesome-vue-ui/compare/v1.2.3...v1.2.4) (2023-02-21)
 
 
