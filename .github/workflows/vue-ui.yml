@@ -2,6 +2,8 @@ name: npm-publish
 on: 
   push: 
     branches: [main]
+    tags:
+      - "v*.*.*"
 jobs:
     release:
       name: 🔥 publish
