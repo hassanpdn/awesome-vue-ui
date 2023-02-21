@@ -1,4 +1,4 @@
-import { openBlock as d, createElementBlock as c, normalizeClass as u, renderSlot as h, createElementVNode as o } from "vue";
+import { openBlock as d, createElementBlock as c, normalizeClass as u, renderSlot as m, createElementVNode as o } from "vue";
 const i = (t, e) => {
   const n = t.__vccOpts || t;
   for (const [s, a] of e)
@@ -18,15 +18,15 @@ const i = (t, e) => {
     }
   }
 };
-function _(t, e, n, s, a, r) {
+function h(t, e, n, s, a, l) {
   return d(), c("button", {
     class: u(["p-3 rounded-sm bg-green-600 hover:bg-green-50 hover:shadow-md hover:shadow-gray-400 active:shadow-sm active:bg-green-800 transition-colors transition-shadows duration-500 ease-linear", { "w-full": n.expanded }]),
-    onClick: e[0] || (e[0] = (...p) => r.handleClick && r.handleClick(...p))
+    onClick: e[0] || (e[0] = (...p) => l.handleClick && l.handleClick(...p))
   }, [
-    h(t.$slots, "default")
+    m(t.$slots, "default")
   ], 2);
 }
-const m = /* @__PURE__ */ i(f, [["render", _]]), g = {
+const _ = /* @__PURE__ */ i(f, [["render", h]]), g = {
   name: "alert",
   props: {
     variant: {
@@ -65,11 +65,17 @@ const m = /* @__PURE__ */ i(f, [["render", _]]), g = {
     size_handler() {
       return "alert-" + this.size;
     }
+  },
+  mounted() {
+    document.getElementsByTagName("body").style.overflow = "hidden";
+  },
+  beforeDestroy() {
+    document.getElementsByTagName("body").style.overflow = "none";
   }
-}, v = {
+}, y = {
   class: "bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative",
   role: "alert"
-}, b = /* @__PURE__ */ o("strong", { class: "font-bold" }, "Holy smokes!", -1), y = /* @__PURE__ */ o("span", { class: "block sm:inline" }, "Something seriously bad happened.", -1), w = /* @__PURE__ */ o("span", { class: "absolute top-0 bottom-0 right-0 px-4 py-3" }, [
+}, b = /* @__PURE__ */ o("strong", { class: "font-bold" }, "Holy smokes!", -1), v = /* @__PURE__ */ o("span", { class: "block sm:inline" }, "Something seriously bad happened.", -1), w = /* @__PURE__ */ o("span", { class: "absolute top-0 bottom-0 right-0 px-4 py-3" }, [
   /* @__PURE__ */ o("svg", {
     class: "fill-current h-6 w-6 text-red-500",
     role: "button",
@@ -81,16 +87,16 @@ const m = /* @__PURE__ */ i(f, [["render", _]]), g = {
   ])
 ], -1), x = [
   b,
-  y,
+  v,
   w
 ];
-function k(t, e, n, s, a, r) {
-  return d(), c("div", v, x);
+function k(t, e, n, s, a, l) {
+  return d(), c("div", y, x);
 }
-const B = /* @__PURE__ */ i(g, [["render", k]]), $ = { VButton: m, VAlert: B }, l = $, z = {
+const B = /* @__PURE__ */ i(g, [["render", k]]), $ = { VButton: _, VAlert: B }, r = $, z = {
   install(t) {
-    Object.keys(l).forEach((e) => {
-      t.component(e, l[e]);
+    Object.keys(r).forEach((e) => {
+      t.component(e, r[e]);
     });
   }
 };

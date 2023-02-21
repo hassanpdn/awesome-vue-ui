@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/hassanpdn/awesome-vue-ui/compare/v1.2.3...v1.2.4) (2023-02-21)
+
+
+### Bug Fixes
+
+* manipulte body style on alert show ([11f3797](https://github.com/hassanpdn/awesome-vue-ui/commit/11f37971b5d29f5ef9b1e667af8ff5276347c21f))
+
 ## [1.2.3](https://github.com/hassanpdn/awesome-vue-ui/compare/v1.2.2...v1.2.3) (2023-02-21)
 
 
