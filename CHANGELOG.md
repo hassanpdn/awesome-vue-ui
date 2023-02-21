@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/hassanpdn/awesome-vue-ui/compare/v1.2.0...v1.2.1) (2023-02-21)
+
+
+### Bug Fixes
+
+* update package.json ([afca3f4](https://github.com/hassanpdn/awesome-vue-ui/commit/afca3f416ad01d93f8034b2c68583f66ff4d34d7))
+
 # [1.2.0](https://github.com/hassanpdn/awesome-vue-ui/compare/v1.1.2...v1.2.0) (2023-02-21)
 
 
