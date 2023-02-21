@@ -1,3 +1,4 @@
 import VButton from "./Button/VButton.vue";
+import VAlert from "./Alert/VAlert.vue";
 
-export default { VButton }
+export default { VButton, VAlert }
