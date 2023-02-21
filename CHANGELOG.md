@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/hassanpdn/awesome-vue-ui/compare/v1.2.2...v1.2.3) (2023-02-21)
+
+
+### Bug Fixes
+
+* add alert component for export ([1e63b4d](https://github.com/hassanpdn/awesome-vue-ui/commit/1e63b4d1ce1b512b02b523356f4c79da7899b58f))
+
 ## [1.2.2](https://github.com/hassanpdn/awesome-vue-ui/compare/v1.2.1...v1.2.2) (2023-02-21)
 
 
