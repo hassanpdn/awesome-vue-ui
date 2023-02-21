@@ -50,10 +50,10 @@
                   }
             },
             mounted(){
-                  document.getElementsByTagName('body').style.overflow = 'hidden'
+                  document.querySelector('body').style.overflow = "hidden"
             },
             beforeDestroy() {
-                  document.getElementsByTagName('body').style.overflow = 'none'
+                  document.querySelector('body').style.overflow = 'visible'
             },
       }
 </script>
