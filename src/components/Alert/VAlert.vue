@@ -52,7 +52,7 @@
             mounted(){
                   document.querySelector('body').style.overflow = "hidden"
             },
-            beforeDestroy() {
+            beforeDestroy() { 
                   document.querySelector('body').style.overflow = 'visible'
             },
       }
