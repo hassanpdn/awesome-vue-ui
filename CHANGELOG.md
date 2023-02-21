@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/hassanpdn/awesome-vue-ui/compare/v1.1.1...v1.1.2) (2023-02-21)
+
+
+### Bug Fixes
+
+* update github workflow ([1478956](https://github.com/hassanpdn/awesome-vue-ui/commit/14789561f4282e7c1aa44f540b2a74cb55808e49))
+
 ## [1.1.1](https://github.com/hassanpdn/awesome-vue-ui/compare/v1.1.0...v1.1.1) (2023-02-20)
 
 
