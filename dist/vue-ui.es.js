@@ -1,5 +1,5 @@
-import { openBlock as a, createElementBlock as n, normalizeClass as u, renderSlot as f, Fragment as _, createElementVNode as t, toDisplayString as c, createCommentVNode as g } from "vue";
-const m = (l, s) => {
+import { openBlock as a, createElementBlock as n, normalizeClass as m, renderSlot as f, Fragment as _, createElementVNode as t, toDisplayString as c, createCommentVNode as g } from "vue";
+const u = (l, s) => {
   const e = l.__vccOpts || l;
   for (const [r, i] of s)
     e[r] = i;
@@ -28,13 +28,13 @@ const m = (l, s) => {
 };
 function w(l, s, e, r, i, o) {
   return a(), n("button", {
-    class: u(["p-3 rounded-sm hover:bg-green-50 hover:shadow-md hover:shadow-gray-400 active:shadow-sm active:bg-green-800 transition-colors transition-shadows duration-500 ease-linear", `${e.expanded ? "w-full" : ""} ${e.bgColor} ${e.textColor}`]),
+    class: m(["p-3 rounded-sm hover:bg-green-50 hover:shadow-md hover:shadow-gray-400 active:shadow-sm active:bg-green-800 transition-colors transition-shadows duration-500 ease-linear", `${e.expanded ? "w-full" : ""} ${e.bgColor} ${e.textColor}`]),
     onClick: s[0] || (s[0] = (...d) => o.handleClick && o.handleClick(...d))
   }, [
     f(l.$slots, "default")
   ], 2);
 }
-const y = /* @__PURE__ */ m(v, [["render", w]]), b = {
+const y = /* @__PURE__ */ u(v, [["render", w]]), x = {
   name: "Alert",
   emits: ["input"],
   props: {
@@ -105,7 +105,7 @@ const y = /* @__PURE__ */ m(v, [["render", w]]), b = {
   mounted() {
     document.querySelector("body").style.overflow = "hidden";
   }
-}, x = /* @__PURE__ */ t("div", { class: "overlay backdrop-blur-sm h-screen w-screen blur-sm z-10 absolute" }, null, -1), p = {
+}, b = /* @__PURE__ */ t("div", { class: "overlay backdrop-blur-sm h-screen w-screen blur-sm z-10 absolute" }, null, -1), p = {
   key: 0,
   class: "flex items-center mx-4 my-3",
   xmlns: "http://www.w3.org/2000/svg",
@@ -164,6 +164,7 @@ const y = /* @__PURE__ */ m(v, [["render", w]]), b = {
   M
 ], H = {
   key: 3,
+  class: "flex items-center mx-4 my-3",
   xmlns: "http://www.w3.org/2000/svg",
   width: "20.001",
   height: "18",
@@ -184,9 +185,9 @@ const y = /* @__PURE__ */ m(v, [["render", w]]), b = {
 ];
 function T(l, s, e, r, i, o) {
   return a(), n(_, null, [
-    x,
+    b,
     t("div", {
-      class: u(["alert absolute flex justify-between items-center z-20", [o.alertClass, o.sizeClass, { "text-center": e.center }]]),
+      class: m(["alert absolute flex justify-between items-center z-20", [o.alertClass, o.sizeClass, { "text-center": e.center }]]),
       role: "alert"
     }, [
       e.variant === "danger" ? (a(), n("svg", p, k)) : e.variant === "info" ? (a(), n("svg", A, S)) : e.variant === "success" ? (a(), n("svg", Z, z)) : (a(), n("svg", H, V)),
@@ -206,7 +207,7 @@ function T(l, s, e, r, i, o) {
     ], 2)
   ], 64);
 }
-const F = /* @__PURE__ */ m(b, [["render", T]]), G = { VButton: y, VAlert: F }, h = G, K = {
+const F = /* @__PURE__ */ u(x, [["render", T]]), G = { VButton: y, VAlert: F }, h = G, K = {
   install(l) {
     Object.keys(h).forEach((s) => {
       l.component(s, h[s]);
