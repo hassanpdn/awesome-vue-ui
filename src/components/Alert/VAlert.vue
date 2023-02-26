@@ -1,7 +1,7 @@
 <template>
       <div class="overlay h-screen w-full blur-sm z-10 relative">
       </div>
-      <div class="alert" :class="[alertClass, sizeClass, {'text-center': center}]" role="alert">
+      <div class="alert absolute" :class="[alertClass, sizeClass, {'text-center': center}]" role="alert">
             <strong class="font-bold">{{ title }}</strong>
             <span class="block sm:inline">{{ message }}</span>
             <span v-if="close_able" class="absolute top-0 bottom-0 right-0 px-4 py-3">
@@ -16,6 +16,7 @@
 <script>
             export default {
                   name: 'Alert',
+                  emits: ['input'],
                   props: {
                         title: {
                               type: String,
@@ -53,16 +54,16 @@
                   computed: {
                         variantHandler(){
                               switch (this.variant) {
-                                    case 'danger':
-                                          return 'red'  
                                     case 'success':
-                                          return 'green'  
+                                          return 'green'
+                                    case 'danger':
+                                          return 'red'
                                     case 'warning':
-                                          return 'orange'  
+                                          return 'orange'
                                     case 'info':
-                                          return 'blue'  
+                                          return 'blue'
                               }
-                        },    
+                        },
                         alertClass() {
                               return [
                                     'bg-' + this.variantHandler + '-100',
@@ -76,7 +77,7 @@
                               return 'w-3/4 md:w-2/5 mx-auto -mt-1 ' + 'alert-' + this.size;
                         },
                   },
-                  methods: {  
+                  methods: {
                         close() {
                               this.$emit('input', false);
                         }
