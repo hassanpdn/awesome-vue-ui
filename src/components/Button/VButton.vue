@@ -9,9 +9,9 @@
             active:bg-green-800 
             transition-colors 
             transition-shadows 
-            duration-500 
+            duration-500
             ease-linear"
-            :class="`${expanded ? 'w-full' : ''} ${bgColor} ${textColor} ${text}`"
+            :class="`${expanded ? 'w-full' : ''} ${bgColor} ${textColor}`"
             @click="handleClick"
       >
             <slot/>
@@ -25,10 +25,6 @@
                   expanded: {
                         type: Boolean,
                         default: false
-                  },
-                  text: {
-                        type: String,
-                        default: ''
                   },
                   textColor: {
                         type: String,

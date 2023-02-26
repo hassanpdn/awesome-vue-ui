@@ -50,10 +50,20 @@
                   }
             },
             mounted(){
-                  document.querySelector('body').style.overflow = "hidden"
+                  const bodyElement = document.querySelector("body");
+                  bodyElement.style.overflow = "hidden";
+                  bodyElement.classList.add = "blur-sm";
+                  bodyElement.addEventListener('click', ()=> {
+                        return false
+                  })
             },
             beforeDestroy() { 
-                  document.querySelector('body').style.overflow = 'visible'
+                  const bodyElement = document.querySelector("body");
+                  bodyElement.style.overflow = "visible";
+                  bodyElement.classList.remove = "blur-sm";
+                  bodyElement.removeEventListener('click', ()=> {
+                        return false
+                  })
             },
       }
 </script>
