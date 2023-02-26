@@ -1,10 +1,10 @@
-import { openBlock as s, createElementBlock as a, normalizeClass as m, renderSlot as h, Fragment as g, createElementVNode as o, toDisplayString as c, createCommentVNode as y } from "vue";
+import { openBlock as s, createElementBlock as a, normalizeClass as m, renderSlot as h, Fragment as g, createElementVNode as o, toDisplayString as c, createCommentVNode as b } from "vue";
 const f = (n, t) => {
   const e = n.__vccOpts || n;
   for (const [r, d] of t)
     e[r] = d;
   return e;
-}, b = {
+}, y = {
   name: "v-button",
   props: {
     expanded: {
@@ -26,7 +26,7 @@ const f = (n, t) => {
     }
   }
 };
-function _(n, t, e, r, d, l) {
+function p(n, t, e, r, d, l) {
   return s(), a("button", {
     class: m(["p-3 rounded-sm hover:bg-green-50 hover:shadow-md hover:shadow-gray-400 active:shadow-sm active:bg-green-800 transition-colors transition-shadows duration-500 ease-linear", `${e.expanded ? "w-full" : ""} ${e.bgColor} ${e.textColor}`]),
     onClick: t[0] || (t[0] = (...i) => l.handleClick && l.handleClick(...i))
@@ -34,8 +34,9 @@ function _(n, t, e, r, d, l) {
     h(n.$slots, "default")
   ], 2);
 }
-const p = /* @__PURE__ */ f(b, [["render", _]]), v = {
+const _ = /* @__PURE__ */ f(y, [["render", p]]), v = {
   name: "Alert",
+  emits: ["input"],
   props: {
     title: {
       type: String,
@@ -73,10 +74,10 @@ const p = /* @__PURE__ */ f(b, [["render", _]]), v = {
   computed: {
     variantHandler() {
       switch (this.variant) {
-        case "danger":
-          return "red";
         case "success":
           return "green";
+        case "danger":
+          return "red";
         case "warning":
           return "orange";
         case "info":
@@ -118,7 +119,7 @@ function H(n, t, e, r, d, l) {
   return s(), a(g, null, [
     w,
     o("div", {
-      class: m(["alert", [l.alertClass, l.sizeClass, { "text-center": e.center }]]),
+      class: m(["alert absolute", [l.alertClass, l.sizeClass, { "text-center": e.center }]]),
       role: "alert"
     }, [
       o("strong", C, c(e.title), 1),
@@ -131,11 +132,11 @@ function H(n, t, e, r, d, l) {
           xmlns: "http://www.w3.org/2000/svg",
           viewBox: "0 0 20 20"
         }, z))
-      ])) : y("", !0)
+      ])) : b("", !0)
     ], 2)
   ], 64);
 }
-const V = /* @__PURE__ */ f(v, [["render", H]]), E = { VButton: p, VAlert: V }, u = E, $ = {
+const V = /* @__PURE__ */ f(v, [["render", H]]), E = { VButton: _, VAlert: V }, u = E, $ = {
   install(n) {
     Object.keys(u).forEach((t) => {
       n.component(t, u[t]);
