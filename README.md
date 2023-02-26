@@ -20,10 +20,6 @@ All contributions are welcomed. Help me to enrich this repository.
 
 If you find any **bugs** in the examples, please file an issue.
 
-### TODO
-
-- [ ] Add modal component
-
 ## Installation
 
 ```shell
@@ -82,3 +78,7 @@ createApp(App)
 | Button Component---- |:-------------:| ---------------:|
 | bgColor              | string        | 'bg-green-500'  |
 | textColor            | string        | 'bg-black-500'  |
+
+### TODO
+
+- [ ] Add modal component
