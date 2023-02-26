@@ -1,7 +1,7 @@
 <template>
       <div class="overlay h-screen w-full blur-sm z-10 relative">
       </div>
-      <div class="alert absolute" :class="[alertClass, sizeClass, {'text-center': center}]" role="alert">
+      <div class="alert absolute flex flex-col" :class="[alertClass, sizeClass, {'text-center': center}]" role="alert">
             <strong class="font-bold">{{ title }}</strong>
             <span class="block sm:inline">{{ message }}</span>
             <span v-if="close_able" class="absolute top-0 bottom-0 right-0 px-4 py-3">
@@ -14,80 +14,80 @@
 </template>
 
 <script>
-            export default {
-                  name: 'Alert',
-                  emits: ['input'],
-                  props: {
-                        title: {
-                              type: String,
-                              default: 'Holy smokes!'
-                        },
-                        message: {
-                              type: String,
-                              default: 'Something seriously bad happened.'
-                        },
-                        variant: {
-                              type: String,
-                              default: 'danger'
-                        },
-                        close_able: {
-                              type: Boolean,
-                              default: true
-                        },
-                        size: {
-                              type: String,
-                              default: 'md'
-                        },
-                        rounded: {
-                              type: Boolean,
-                              default: false
-                        },
-                        center: {
-                              type: Boolean,
-                              default: false
-                        },
-                        value: {
-                              type: Boolean,
-                              default: false
+      export default {
+            name: 'Alert',
+            emits: ['input'],
+            props: {
+                  title: {
+                        type: String,
+                        default: 'Holy smokes!'
+                  },
+                  message: {
+                        type: String,
+                        default: 'Something seriously bad happened.'
+                  },
+                  variant: {
+                        type: String,
+                        default: 'danger'
+                  },
+                  close_able: {
+                        type: Boolean,
+                        default: true
+                  },
+                  size: {
+                        type: String,
+                        default: 'md'
+                  },
+                  rounded: {
+                        type: Boolean,
+                        default: false
+                  },
+                  center: {
+                        type: Boolean,
+                        default: false
+                  },
+                  value: {
+                        type: Boolean,
+                        default: false
+                  }
+            },
+            computed: {
+                  variantHandler(){
+                        switch (this.variant) {
+                              case 'success':
+                                    return 'green'
+                              case 'danger':
+                                    return 'red'
+                              case 'warning':
+                                    return 'orange'
+                              case 'info':
+                                    return 'blue'
                         }
                   },
-                  computed: {
-                        variantHandler(){
-                              switch (this.variant) {
-                                    case 'success':
-                                          return 'green'
-                                    case 'danger':
-                                          return 'red'
-                                    case 'warning':
-                                          return 'orange'
-                                    case 'info':
-                                          return 'blue'
-                              }
-                        },
-                        alertClass() {
-                              return [
-                                    'bg-' + this.variantHandler + '-100',
-                                    'border',
-                                    'border-' + this.variantHandler + '-400',
-                                    'text-' + this.variantHandler + '-700',
-                                    {'rounded-lg rounded-t-none': !this.rounded},
-                              ];
-                        },
-                        sizeClass() {
-                              return 'w-3/4 md:w-2/5 mx-auto -mt-1 ' + 'alert-' + this.size;
-                        },
+                  alertClass() {
+                        return [
+                              'bg-' + this.variantHandler + '-100',
+                              'border',
+                              'border-' + this.variantHandler + '-400',
+                              'text-' + this.variantHandler + '-700',
+                              {'rounded-lg rounded-t-none': !this.rounded},
+                        ];
                   },
-                  methods: {
-                        close() {
-                              this.$emit('input', false);
-                        }
+                  sizeClass() {
+                        return 'w-3/4 md:w-2/5 mx-auto -mt-1 ' + 'alert-' + this.size;
                   },
-                  mounted() {
-                        document.querySelector('body').style.overflow = 'hidden';
-                  },
-                  beforeDestroy() {
-                        document.querySelector('body').style.overflow = 'visible';
-                  },
-            };
+            },
+            methods: {
+                  close() {
+                        this.$emit('input', false);
+                  }
+            },
+            mounted() {
+                  document.querySelector('body').style.overflow = 'hidden';
+            },
+            beforeDestroy() {
+                  document.querySelector('body').style.overflow = 'visible';
+            },
+      }
 </script>
     
