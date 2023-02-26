@@ -1,3 +1,10 @@
+## [1.2.18](https://github.com/hassanpdn/awesome-vue-ui/compare/v1.2.17...v1.2.18) (2023-02-26)
+
+
+### Bug Fixes
+
+* add icons to alert ([35a1c2c](https://github.com/hassanpdn/awesome-vue-ui/commit/35a1c2cd2ae79a4c00258d473817c325001c6fe2))
+
 ## [1.2.17](https://github.com/hassanpdn/awesome-vue-ui/compare/v1.2.16...v1.2.17) (2023-02-26)
 
 
