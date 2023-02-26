@@ -1,3 +1,10 @@
+## [1.2.11](https://github.com/hassanpdn/awesome-vue-ui/compare/v1.2.10...v1.2.11) (2023-02-26)
+
+
+### Bug Fixes
+
+* add unit test for VAlert ([024c867](https://github.com/hassanpdn/awesome-vue-ui/commit/024c867715d36505d35fe05015d4e8a87918b08b))
+
 ## [1.2.10](https://github.com/hassanpdn/awesome-vue-ui/compare/v1.2.9...v1.2.10) (2023-02-26)
 
 
