@@ -2,7 +2,7 @@
 
 <p align="center" style="text-align:center;">
       <a href="https://www.npmjs.com/package/awesome-vue-ui">
-            <img alt="awesome-vue-ui" src="/NPM_Final.png" width="500" />
+            <img alt="awesome-vue-ui" src="/NPM_Final.svg" width="500" />
       </a>
 </p>
 
