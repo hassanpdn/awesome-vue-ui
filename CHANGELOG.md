@@ -1,3 +1,10 @@
+## [1.2.16](https://github.com/hassanpdn/awesome-vue-ui/compare/v1.2.15...v1.2.16) (2023-02-26)
+
+
+### Bug Fixes
+
+* update alert style ([3241662](https://github.com/hassanpdn/awesome-vue-ui/commit/3241662a656729a9652f76e3a36c8d27fcb8c15e))
+
 ## [1.2.15](https://github.com/hassanpdn/awesome-vue-ui/compare/v1.2.14...v1.2.15) (2023-02-26)
 
 
