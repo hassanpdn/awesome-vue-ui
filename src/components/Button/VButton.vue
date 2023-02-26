@@ -2,7 +2,6 @@
       <button class="
             p-3 
             rounded-sm 
-            bg-green-600 
             hover:bg-green-50 
             hover:shadow-md 
             hover:shadow-gray-400 
@@ -12,7 +11,7 @@
             transition-shadows 
             duration-500 
             ease-linear"
-            :class="{'w-full': expanded}"
+            :class="`${expanded ? 'w-full' : ''} ${bgColor} ${textColor} ${text}`"
             @click="handleClick"
       >
             <slot/>
@@ -26,6 +25,18 @@
                   expanded: {
                         type: Boolean,
                         default: false
+                  },
+                  text: {
+                        type: String,
+                        default: ''
+                  },
+                  textColor: {
+                        type: String,
+                        default: 'bg-gray-300'
+                  },
+                  bgColor: {
+                        type: String,
+                        default: "bg-blue-500",
                   }
             },
             methods: {

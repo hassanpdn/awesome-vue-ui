@@ -20,10 +20,12 @@ describe('Button', () => {
       it('checks the prop to be passed', () => {
             const wrapper = mount(Button, {
                   propsData: {
-                        expanded: true
+                        expanded: true,
+                        bgColor: 'bg-red-300'
                   }
             })
             expect(wrapper.classes()).toContain('w-full');
+            expect(wrapper.classes()).toContain('bg-red-300');
       })
 
 })
