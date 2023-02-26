@@ -1,3 +1,10 @@
+## [1.2.12](https://github.com/hassanpdn/awesome-vue-ui/compare/v1.2.11...v1.2.12) (2023-02-26)
+
+
+### Bug Fixes
+
+* update variant handler ([030aedd](https://github.com/hassanpdn/awesome-vue-ui/commit/030aedd2add302de7da3bf652e4283f839d36986))
+
 ## [1.2.11](https://github.com/hassanpdn/awesome-vue-ui/compare/v1.2.10...v1.2.11) (2023-02-26)
 
 
