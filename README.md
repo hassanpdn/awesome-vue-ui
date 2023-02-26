@@ -69,7 +69,7 @@ createApp(App)
 
 ## Default values of props
 
-- Alert
+Alert
       | Property             | Type          | Default value   |
       | -------------------- |:-------------:| ---------------:|
       | title                | boolean       | true            |
@@ -80,7 +80,7 @@ createApp(App)
       | rounded              | boolean       | true            |
       | value                | boolean       | false           |
 
-- Button
+Button
       | Property             | Type          | Default value   |
       | -------------------- |:-------------:| ---------------:|
       | bgColor              | string        | 'bg-green-500'  |
