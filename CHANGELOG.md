@@ -1,3 +1,10 @@
+## [1.2.9](https://github.com/hassanpdn/awesome-vue-ui/compare/v1.2.8...v1.2.9) (2023-02-26)
+
+
+### Bug Fixes
+
+* add overlay to VAlert ([50277bd](https://github.com/hassanpdn/awesome-vue-ui/commit/50277bd81214b946cd87d6361ae73e620e2bbea2))
+
 ## [1.2.8](https://github.com/hassanpdn/awesome-vue-ui/compare/v1.2.7...v1.2.8) (2023-02-26)
 
 
