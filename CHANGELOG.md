@@ -1,3 +1,10 @@
+## [1.2.10](https://github.com/hassanpdn/awesome-vue-ui/compare/v1.2.9...v1.2.10) (2023-02-26)
+
+
+### Bug Fixes
+
+* update overlay style ([756a371](https://github.com/hassanpdn/awesome-vue-ui/commit/756a37171b80df0ae33604111c9ca9ce54be12c7))
+
 ## [1.2.9](https://github.com/hassanpdn/awesome-vue-ui/compare/v1.2.8...v1.2.9) (2023-02-26)
 
 
