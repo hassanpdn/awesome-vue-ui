@@ -1,9 +1,9 @@
 <template>
-      <div class="overlay h-screen w-full blur-sm z-10 relative">
-      </div>
+      <!-- <div class="overlay h-screen w-full blur-sm z-10 relative">
+      </div> -->
       <div class="alert absolute flex flex-col" :class="[alertClass, sizeClass, {'text-center': center}]" role="alert">
-            <strong class="font-bold">{{ title }}</strong>
-            <span class="block sm:inline">{{ message }}</span>
+            <strong class="font-bold mt-2">{{ title }}</strong>
+            <span class="block sm:inline mb-2">{{ message }}</span>
             <span v-if="close_able" class="absolute top-0 bottom-0 right-0 px-4 py-3">
                   <svg class="fill-current h-6 w-6" role="button" @click="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                         <title>Close</title>
@@ -70,7 +70,7 @@
                               'border',
                               'border-' + this.variantHandler + '-400',
                               'text-' + this.variantHandler + '-700',
-                              {'rounded-lg rounded-t-none': !this.rounded},
+                              {'rounded-lg': this.rounded}
                         ];
                   },
                   sizeClass() {
