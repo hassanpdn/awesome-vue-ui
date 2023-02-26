@@ -67,21 +67,18 @@ createApp(App)
 },
 ```
 
-## Default values of props
-
-Alert
-      | Property             | Type          | Default value   |
-      | -------------------- |:-------------:| ---------------:|
-      | title                | boolean       | true            |
-      | message              | string        | 'No message'    |
-      | variant              | string        | 'Success'       |
-      | close_able           | boolean       | true            |
-      | size                 | string        | 'md'            |
-      | rounded              | boolean       | true            |
-      | value                | boolean       | false           |
-
-Button
-      | Property             | Type          | Default value   |
-      | -------------------- |:-------------:| ---------------:|
-      | bgColor              | string        | 'bg-green-500'  |
-      | textColor            | string        | 'bg-black-500'  |
+# Default values of props
+| Property             | Type          | Default value   |
+| -------------------- |:-------------:| ---------------:|
+| Alert Component----- |:-------------:| ---------------:|
+| title                | boolean       | true            |
+| message              | string        | 'No message'    |
+| variant              | string        | 'Success'       |
+| close_able           | boolean       | true            |
+| size                 | string        | 'md'            |
+| rounded              | boolean       | true            |
+| value                | boolean       | false           |
+| -------------------- |:-------------:| ---------------:|
+| Button Component---- |:-------------:| ---------------:|
+| bgColor              | string        | 'bg-green-500'  |
+| textColor            | string        | 'bg-black-500'  |
