@@ -1,3 +1,11 @@
+## [1.2.6](https://github.com/hassanpdn/awesome-vue-ui/compare/v1.2.5...v1.2.6) (2023-02-26)
+
+
+### Bug Fixes
+
+* make some styles being passed by props in VButton. ([cc73a57](https://github.com/hassanpdn/awesome-vue-ui/commit/cc73a5735dd58879b137bd1ae58996fe30356fee))
+* update snapshot in unit test ([9d1ac36](https://github.com/hassanpdn/awesome-vue-ui/commit/9d1ac363ecbf82c0d9a72592112e573d877ecd08))
+
 ## [1.2.5](https://github.com/hassanpdn/awesome-vue-ui/compare/v1.2.4...v1.2.5) (2023-02-21)
 
 
