@@ -1,3 +1,10 @@
+## [1.2.25](https://github.com/hassanpdn/awesome-vue-ui/compare/v1.2.24...v1.2.25) (2023-02-26)
+
+
+### Bug Fixes
+
+* add screen to readme ([bdde8a7](https://github.com/hassanpdn/awesome-vue-ui/commit/bdde8a7861ae199e4f5322c9ea6b887f933c9ecb))
+
 ## [1.2.24](https://github.com/hassanpdn/awesome-vue-ui/compare/v1.2.23...v1.2.24) (2023-02-26)
 
 
