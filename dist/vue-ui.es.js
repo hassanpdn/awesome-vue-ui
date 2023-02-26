@@ -1,10 +1,10 @@
-import { openBlock as d, createElementBlock as c, normalizeClass as p, renderSlot as f, createElementVNode as n } from "vue";
-const i = (e, t) => {
-  const o = e.__vccOpts || e;
-  for (const [s, l] of t)
-    o[s] = l;
+import { openBlock as d, createElementBlock as c, normalizeClass as p, renderSlot as m, createElementVNode as r } from "vue";
+const i = (t, e) => {
+  const o = t.__vccOpts || t;
+  for (const [n, l] of e)
+    o[n] = l;
   return o;
-}, m = {
+}, f = {
   name: "v-button",
   props: {
     expanded: {
@@ -26,15 +26,15 @@ const i = (e, t) => {
     }
   }
 };
-function h(e, t, o, s, l, r) {
+function y(t, e, o, n, l, s) {
   return d(), c("button", {
     class: p(["p-3 rounded-sm hover:bg-green-50 hover:shadow-md hover:shadow-gray-400 active:shadow-sm active:bg-green-800 transition-colors transition-shadows duration-500 ease-linear", `${o.expanded ? "w-full" : ""} ${o.bgColor} ${o.textColor}`]),
-    onClick: t[0] || (t[0] = (...u) => r.handleClick && r.handleClick(...u))
+    onClick: e[0] || (e[0] = (...u) => s.handleClick && s.handleClick(...u))
   }, [
-    f(e.$slots, "default")
+    m(t.$slots, "default")
   ], 2);
 }
-const b = /* @__PURE__ */ i(m, [["render", h]]), y = {
+const b = /* @__PURE__ */ i(f, [["render", y]]), h = {
   name: "alert",
   props: {
     variant: {
@@ -75,41 +75,39 @@ const b = /* @__PURE__ */ i(m, [["render", h]]), y = {
     }
   },
   mounted() {
-    const e = document.querySelector("body");
-    e.style.overflow = "hidden", e.classList.add = "blur-sm", e.addEventListener("click", () => !1);
+    document.querySelector("body").style.overflow = "hidden", document.querySelector("body").classList.add = "blur-sm", document.querySelector("body").addEventListener("click", () => !1);
   },
   beforeDestroy() {
-    const e = document.querySelector("body");
-    e.style.overflow = "visible", e.classList.remove = "blur-sm", e.removeEventListener("click", () => !1);
+    document.querySelector("body").style.overflow = "visible", document.querySelector("body").classList.remove = "blur-sm", document.querySelector("body").removeEventListener("click", () => !1);
   }
 }, _ = {
   class: "bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative",
   role: "alert"
-}, g = /* @__PURE__ */ n("strong", { class: "font-bold" }, "Holy smokes!", -1), v = /* @__PURE__ */ n("span", { class: "block sm:inline" }, "Something seriously bad happened.", -1), w = /* @__PURE__ */ n("span", { class: "absolute top-0 bottom-0 right-0 px-4 py-3" }, [
-  /* @__PURE__ */ n("svg", {
+}, g = /* @__PURE__ */ r("strong", { class: "font-bold" }, "Holy smokes!", -1), v = /* @__PURE__ */ r("span", { class: "block sm:inline" }, "Something seriously bad happened.", -1), w = /* @__PURE__ */ r("span", { class: "absolute top-0 bottom-0 right-0 px-4 py-3" }, [
+  /* @__PURE__ */ r("svg", {
     class: "fill-current h-6 w-6 text-red-500",
     role: "button",
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 0 20 20"
   }, [
-    /* @__PURE__ */ n("title", null, "Close"),
-    /* @__PURE__ */ n("path", { d: "M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z" })
+    /* @__PURE__ */ r("title", null, "Close"),
+    /* @__PURE__ */ r("path", { d: "M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z" })
   ])
 ], -1), x = [
   g,
   v,
   w
 ];
-function k(e, t, o, s, l, r) {
+function k(t, e, o, n, l, s) {
   return d(), c("div", _, x);
 }
-const C = /* @__PURE__ */ i(y, [["render", k]]), $ = { VButton: b, VAlert: C }, a = $, S = {
-  install(e) {
-    Object.keys(a).forEach((t) => {
-      e.component(t, a[t]);
+const S = /* @__PURE__ */ i(h, [["render", k]]), C = { VButton: b, VAlert: S }, a = C, B = {
+  install(t) {
+    Object.keys(a).forEach((e) => {
+      t.component(e, a[e]);
     });
   }
 };
 export {
-  S as default
+  B as default
 };
