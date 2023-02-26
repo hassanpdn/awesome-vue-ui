@@ -1,3 +1,10 @@
+## [1.2.7](https://github.com/hassanpdn/awesome-vue-ui/compare/v1.2.6...v1.2.7) (2023-02-26)
+
+
+### Bug Fixes
+
+* add blur background for opened alert ([5509e1d](https://github.com/hassanpdn/awesome-vue-ui/commit/5509e1d70961a78f567a44664d29ddc382423c6d))
+
 ## [1.2.6](https://github.com/hassanpdn/awesome-vue-ui/compare/v1.2.5...v1.2.6) (2023-02-26)
 
 
