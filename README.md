@@ -67,7 +67,7 @@ createApp(App)
 },
 ```
 
-# Default values of props
+## Default values of props
 | Property             | Type          | Default value   |
 | -------------------- |:-------------:| ---------------:|
 | Alert Component----- |:-------------:| ---------------:|
