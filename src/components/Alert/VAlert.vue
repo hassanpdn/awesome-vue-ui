@@ -50,18 +50,16 @@
                   }
             },
             mounted(){
-                  const bodyElement = document.querySelector("body");
-                  bodyElement.style.overflow = "hidden";
-                  bodyElement.classList.add = "blur-sm";
-                  bodyElement.addEventListener('click', ()=> {
+                  document.querySelector("body").style.overflow = "hidden";
+                  document.querySelector("body").classList.add = "blur-sm";
+                  document.querySelector("body").addEventListener('click', ()=> {
                         return false
                   })
             },
             beforeDestroy() { 
-                  const bodyElement = document.querySelector("body");
-                  bodyElement.style.overflow = "visible";
-                  bodyElement.classList.remove = "blur-sm";
-                  bodyElement.removeEventListener('click', ()=> {
+                  document.querySelector("body").style.overflow = "visible";
+                  document.querySelector("body").classList.remove = "blur-sm";
+                  document.querySelector("body").removeEventListener('click', ()=> {
                         return false
                   })
             },
