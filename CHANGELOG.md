@@ -1,3 +1,10 @@
+## [1.2.8](https://github.com/hassanpdn/awesome-vue-ui/compare/v1.2.7...v1.2.8) (2023-02-26)
+
+
+### Bug Fixes
+
+* update VAlert body manipulation ([130a250](https://github.com/hassanpdn/awesome-vue-ui/commit/130a250c3473cbb6e0ef68e4171dcc52ec0c6b8d))
+
 ## [1.2.7](https://github.com/hassanpdn/awesome-vue-ui/compare/v1.2.6...v1.2.7) (2023-02-26)
 
 
