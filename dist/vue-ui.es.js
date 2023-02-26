@@ -1,6 +1,6 @@
-import { openBlock as s, createElementBlock as a, normalizeClass as m, renderSlot as h, Fragment as g, createElementVNode as o, toDisplayString as c, createCommentVNode as b } from "vue";
-const f = (n, t) => {
-  const e = n.__vccOpts || n;
+import { openBlock as s, createElementBlock as a, normalizeClass as f, renderSlot as h, Fragment as g, createElementVNode as o, toDisplayString as c, createCommentVNode as b } from "vue";
+const m = (l, t) => {
+  const e = l.__vccOpts || l;
   for (const [r, d] of t)
     e[r] = d;
   return e;
@@ -26,15 +26,15 @@ const f = (n, t) => {
     }
   }
 };
-function p(n, t, e, r, d, l) {
+function p(l, t, e, r, d, n) {
   return s(), a("button", {
-    class: m(["p-3 rounded-sm hover:bg-green-50 hover:shadow-md hover:shadow-gray-400 active:shadow-sm active:bg-green-800 transition-colors transition-shadows duration-500 ease-linear", `${e.expanded ? "w-full" : ""} ${e.bgColor} ${e.textColor}`]),
-    onClick: t[0] || (t[0] = (...i) => l.handleClick && l.handleClick(...i))
+    class: f(["p-3 rounded-sm hover:bg-green-50 hover:shadow-md hover:shadow-gray-400 active:shadow-sm active:bg-green-800 transition-colors transition-shadows duration-500 ease-linear", `${e.expanded ? "w-full" : ""} ${e.bgColor} ${e.textColor}`]),
+    onClick: t[0] || (t[0] = (...i) => n.handleClick && n.handleClick(...i))
   }, [
-    h(n.$slots, "default")
+    h(l.$slots, "default")
   ], 2);
 }
-const _ = /* @__PURE__ */ f(y, [["render", p]]), v = {
+const _ = /* @__PURE__ */ m(y, [["render", p]]), v = {
   name: "Alert",
   emits: ["input"],
   props: {
@@ -115,11 +115,11 @@ const _ = /* @__PURE__ */ f(y, [["render", p]]), v = {
   S,
   B
 ];
-function H(n, t, e, r, d, l) {
+function H(l, t, e, r, d, n) {
   return s(), a(g, null, [
     w,
     o("div", {
-      class: m(["alert absolute", [l.alertClass, l.sizeClass, { "text-center": e.center }]]),
+      class: f(["alert absolute flex flex-col", [n.alertClass, n.sizeClass, { "text-center": e.center }]]),
       role: "alert"
     }, [
       o("strong", C, c(e.title), 1),
@@ -128,7 +128,7 @@ function H(n, t, e, r, d, l) {
         (s(), a("svg", {
           class: "fill-current h-6 w-6",
           role: "button",
-          onClick: t[0] || (t[0] = (...i) => l.close && l.close(...i)),
+          onClick: t[0] || (t[0] = (...i) => n.close && n.close(...i)),
           xmlns: "http://www.w3.org/2000/svg",
           viewBox: "0 0 20 20"
         }, z))
@@ -136,10 +136,10 @@ function H(n, t, e, r, d, l) {
     ], 2)
   ], 64);
 }
-const V = /* @__PURE__ */ f(v, [["render", H]]), E = { VButton: _, VAlert: V }, u = E, $ = {
-  install(n) {
+const V = /* @__PURE__ */ m(v, [["render", H]]), E = { VButton: _, VAlert: V }, u = E, $ = {
+  install(l) {
     Object.keys(u).forEach((t) => {
-      n.component(t, u[t]);
+      l.component(t, u[t]);
     });
   }
 };
