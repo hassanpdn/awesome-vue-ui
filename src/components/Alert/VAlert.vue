@@ -51,22 +51,8 @@
                         }
                   },
                   computed: {
-                        alertClass() {
-                              return [
-                                    'bg-' + this.getVariant(this.variant) + '-100',
-                                    'border',
-                                    'border-' + this.getVariant(this.variant) + '-400',
-                                    'text-' + this.getVariant(this.variant) + '-700',
-                                    {'rounded-lg rounded-t-none': !this.rounded},
-                              ];
-                        },
-                        sizeClass() {
-                              return 'w-3/4 md:w-2/5 mx-auto -mt-1 ' + 'alert-' + this.size;
-                        },
-                  },
-                  methods: {
-                        getVariant(variant){
-                              switch (variant) {
+                        variantHandler(){
+                              switch (this.variant) {
                                     case 'danger':
                                           return 'red'  
                                     case 'success':
@@ -77,6 +63,20 @@
                                           return 'blue'  
                               }
                         },    
+                        alertClass() {
+                              return [
+                                    'bg-' + this.variantHandler + '-100',
+                                    'border',
+                                    'border-' + this.variantHandler + '-400',
+                                    'text-' + this.variantHandler + '-700',
+                                    {'rounded-lg rounded-t-none': !this.rounded},
+                              ];
+                        },
+                        sizeClass() {
+                              return 'w-3/4 md:w-2/5 mx-auto -mt-1 ' + 'alert-' + this.size;
+                        },
+                  },
+                  methods: {  
                         close() {
                               this.$emit('input', false);
                         }
