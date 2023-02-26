@@ -11,7 +11,7 @@ describe('Alert.vue', () => {
             })
             expect(wrapper.props().variant).toBe(variant)
             console.log(wrapper.find('.alert').classes())
-            expect(wrapper.find('.alert').classes()).toContain(`bg-${variant}-100`)
+            expect(wrapper.find('.alert').classes()).toContain(`bg-green-100`)
             expect(wrapper.text()).toContain(message)
       })
 

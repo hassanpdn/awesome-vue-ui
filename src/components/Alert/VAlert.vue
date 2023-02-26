@@ -51,20 +51,32 @@
                         }
                   },
                   computed: {
-                  alertClass() {
-                        return [
-                              'bg-' + this.variant + '-100',
-                              'border',
-                              'border-' + this.variant + '-400',
-                              'text-' + this.variant + '-700',
-                              {'rounded-lg rounded-t-none': !this.rounded},
-                        ];
-                  },
-                  sizeClass() {
-                        return 'w-3/4 md:w-2/5 mx-auto -mt-1 ' + 'alert-' + this.size;
-                  },
+                        alertClass() {
+                              return [
+                                    'bg-' + this.getVariant(this.variant) + '-100',
+                                    'border',
+                                    'border-' + this.getVariant(this.variant) + '-400',
+                                    'text-' + this.getVariant(this.variant) + '-700',
+                                    {'rounded-lg rounded-t-none': !this.rounded},
+                              ];
+                        },
+                        sizeClass() {
+                              return 'w-3/4 md:w-2/5 mx-auto -mt-1 ' + 'alert-' + this.size;
+                        },
                   },
                   methods: {
+                        getVariant(variant){
+                              switch (variant) {
+                                    case 'danger':
+                                          return 'red'  
+                                    case 'success':
+                                          return 'green'  
+                                    case 'warning':
+                                          return 'orange'  
+                                    case 'info':
+                                          return 'blue'  
+                              }
+                        },    
                         close() {
                               this.$emit('input', false);
                         }
