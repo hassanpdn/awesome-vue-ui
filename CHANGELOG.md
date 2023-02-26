@@ -1,3 +1,10 @@
+## [1.2.20](https://github.com/hassanpdn/awesome-vue-ui/compare/v1.2.19...v1.2.20) (2023-02-26)
+
+
+### Bug Fixes
+
+* delete readme ([8156af8](https://github.com/hassanpdn/awesome-vue-ui/commit/8156af87dd2e4814b2111d4cdbc2fc5aae530a09))
+
 ## [1.2.19](https://github.com/hassanpdn/awesome-vue-ui/compare/v1.2.18...v1.2.19) (2023-02-26)
 
 
